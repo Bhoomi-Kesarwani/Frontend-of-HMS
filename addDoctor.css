@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('hospital.jpeg'); 
+    background-size: cover;
+    color: #f0f0f8;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(8, 2, 29, 0.9); 
+}
+
+.header h1 {
+    margin: 0;
+    margin-right: 10px;
+    color: #ffffff;
+}
+
+.header img {
+    max-width: 80px; 
+}
+
+.form-container {
+    background-color: rgba(110, 107, 107, 0.9); 
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h2 {
+    text-align: center;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.form-row label, .form-row input, .form-row select {
+    width: 48%;
+}
+
+.form-row input, .form-row select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.button-row button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.clear-btn {
+    background-color: #dc3545; 
+    color: white;
+}
+
+.next-btn {
+    background-color: #007bff; 
+    color: white;
+}
+
+
+.submit-btn:hover, .submit-btn:active {
+    background-color: #a7b3aa; /
+}
+
+.clear-btn:hover, .clear-btn:active {
+    background-color: #7c7979; 
+}
+
+.next-btn:hover, .next-btn:active {
+    background-color: #696b6d;
+}
