@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="homestyle.css">
+    
+   
+    <script>
+        function logout() {
+            
+            alert('You have logged out successfully.');
+            window.location.href = 'index.html'; // Redirect to  login page
+        }
+    </script>
+
+</head>
+<body>
+    <header>
+        <h1>
+            CITY CARE HOSPITAL
+            <img src="logo.jpeg" alt="Hospital Logo" class="hospital-logo"> 
+        </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="addDoctor.html">Add a Doctor</a></li>
+            <li><a href="search.html">Search Doctor</a></li>
+            <li><a href="bookAppointment.html">Book an Appointment</a></li>
+            <li><a href="billing.html">Billing</a></li>
+            <li><a href="inventory.html">Inventory System</a></li>
+            <li><a href="#" onclick="logout()">Logout</a></li> 
+        </ul>
+    </nav>
+    <main>
+        <img src="hospital.jpeg" alt="Hospital" class="hospital-image">
+    </main>
+    <footer>
+        <p>&copy; 2000 City Care Hospital. All rights reserved.</p>
+    </footer>
+</body>
+</html>
