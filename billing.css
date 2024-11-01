@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling  */
+body {
+    font-family: Arial, sans-serif;
+    background: url('hospital2.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+.overlay {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(234, 240, 243, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.hospital-name {
+    text-align: center;
+    font-size: 2em;
+    color: #062544;
+    margin-bottom: 20px;
+}
+
+.billing-container {
+    background-color: rgba(85, 80, 80, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3, h4 {
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.lookup, .billing-form, .medication-section, .other-services-section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(13, 230, 121, 0.2);
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #061a30;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.total {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 15px;
+    text-align: right;
+}
+
+.medication-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.medication-item input[type="text"] {
+    width: 65%;
+}
+
+.medication-item input[type="number"] {
+    width: 30%;
+}
+
+#medications-list, #other-service-name, #other-service-cost {
+    margin-bottom: 10px;
+}
+
+/* Billing Slip Styling */
+#billing-slip-container {
+    display: none; 
+    margin-top: 20px;
+}
+
+#billing-slip {
+    padding: 20px;
+    border: 1px solid rgba(43, 25, 25, 0.6);
+    background-color: rgb(245, 247, 248); 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+#billing-slip h3 {
+    color: #0c0b0b; 
+    margin-bottom: 15px; 
+}
+
+#billing-slip p {
+    margin: 5px 0; 
+    color: #030303; 
+}
+
+#billing-slip ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+#billing-slip ul li {
+    padding: 5px 0; 
+    border-bottom: 1px solid #eee; 
+}
+
+
+.footer {
+    width: 100%;
+    background-color: #2c3e50;
+    color: #635d5d;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; 
+    bottom: 0;
+    left: 0;
+}
+
+.footer p {
+    font-size: 0.9em;
+}
