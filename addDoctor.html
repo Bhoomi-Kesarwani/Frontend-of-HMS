@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill Doctor's Details</title>
+    <link rel="stylesheet" href="addDoctor.css"> 
+</head>
+<body>
+    <div class="header">
+        <h1>CITY CARE HOSPITAL</h1>
+        <img src="logo.jpeg" alt="Hospital Logo"> 
+    </div>
+    
+    <div class="form-container">
+        <h2>Fill Doctor's Details</h2>
+        <form id="doctorForm">
+            <div class="form-row">
+                <label for="doctorName">Doctor's Name:</label>
+                <input type="text" id="doctorName" name="doctorName" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-row">
+                <label for="qualification">Qualification:</label>
+                <input type="text" id="qualification" name="qualification" required>
+
+                <label for="Preferable">Preferable Fees:</label>
+                <input type="number" id="Preferable" name="Fees" required>
+            </div>
+            <div class="form-row">
+                <label for="category">Category:</label>
+                <select id="category" name="category" onchange="updateSubcategory()" required>
+                    <option value="">Select Category</option>
+                    <option value="generalPhysician">General Physician</option>
+                    <option value="specialist">Specialist</option>
+                    <option value="surgeon">Surgeon</option>
+                </select>
+
+                <label for="subcategory">Subcategory:</label>
+                <select id="subcategory" name="subcategory" required>
+                    <option value="">Select Subcategory</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="timing">Timing for Appointment:</label>
+                <input type="text" id="timing" name="timing" required>
+            </div>
+            <!--  buttons at the end of the form -->
+            <div class="button-row">
+                <button type="submit" class="submit-btn">Submit</button>
+                <button type="button" class="clear-btn" onclick="clearForm()">Clear</button>
+                <button type="button" class="next-btn" onclick="nextForm()">Next</button>
+            </div>
+            
+        </form>
+    </div>
+
+    <script src="addDoctorScript.js"></script> 
+</body>
+</html>
+
