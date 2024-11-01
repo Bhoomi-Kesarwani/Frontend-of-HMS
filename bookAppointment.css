@@ -1,0 +1,96 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('hospital2.jpeg'); 
+    background-size: cover;
+    color: white;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(9, 4, 31, 0.8);
+}
+
+.logo {
+    width: 100px; 
+    margin-right: 20px; 
+}
+
+.container {
+    width: 90%;
+    max-width: 800px; 
+    margin: 40px auto; 
+    padding: 20px;
+    background: rgb(10, 1, 37);
+    border-radius: 10px;
+    margin-top: 20px; 
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.form-input {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    flex: 1; /* Allow the input to grow and fill the row */
+    margin-right: 10px; 
+}
+
+.form-input:last-child {
+    margin-right: 0; /
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 20px; 
+
+.button-row button {
+    flex: 1; /* Allow buttons to grow and fill the row */
+    margin-right: 10px; 
+    padding: 10px; 
+    border: none; 
+    border-radius: 5px; 
+    background-color: #28a745; 
+    color: white; 
+    cursor: pointer; 
+}
+
+.button-row button:last-child {
+    margin-right: 0; 
+}
+
+.button-row button:hover {
+    background-color: #218838; 
+}
+
+.button-row button:active {
+    background-color: #1e7e34; 
+}
+
+.booking-slip {
+    margin-top: 20px;
+}
+
+
+form button {
+    transition: background-color 0.3s ease; 
+}
+
+form button:hover {
+    background-color: #218838; 
+}
+}
