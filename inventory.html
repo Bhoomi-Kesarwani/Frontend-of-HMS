@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Inventory </title>
+  <link rel="stylesheet" href="inventory.css">
+</head>
+<body>
+  <div class="header">
+    
+    <h1>CITY CARE HOSPITAL INVENTORY</h1>
+  </div>
+
+  <div class="background-image">
+    <div class="inventory-section">
+      <!-- Medications Section -->
+      <div class="section" id="medications-section">
+        <h2>Medications</h2>
+        <input type="text" id="med-name" placeholder="Medicine Name">
+        <input type="number" id="med-quantity" placeholder="Quantity">
+        <input type="date" id="med-expiry" placeholder="Expiry Date">
+        <button onclick="addMedication()">Add Medicine</button>
+      </div>
+
+      <!-- Equipment Section -->
+      <div class="section" id="equipment-section">
+        <h2>Equipment</h2>
+        <input type="text" id="equip-name" placeholder="Equipment Name">
+        <input type="number" id="equip-quantity" placeholder="Quantity">
+        <button onclick="addEquipment()">Add Equipment</button>
+      </div>
+
+      <!-- Supplies Section -->
+      <div class="section" id="supplies-section">
+        <h2>Supplies</h2>
+        <input type="text" id="supply-name" placeholder="Supply Item">
+        <input type="number" id="supply-quantity" placeholder="Quantity">
+        <button onclick="addSupply()">Add Supply</button>
+      </div>
+    </div>
+
+    <!-- Inventory Details Section -->
+    <div class="details-section">
+      <h2>Inventory Details</h2>
+      <table id="inventory-table">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Expiry Date</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="inventory.js"></script>
+</body>
+</html>
