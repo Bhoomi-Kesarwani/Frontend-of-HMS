@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f4fa;
+    background-image: url('hospital.jpeg'); 
+    background-size: cover; /* to Ensure the image covers the entire body */
+    background-position: center; 
+    background-repeat: no-repeat; /* to Prevent the image from repeating */
+}
+
+header {
+    background: #070424;
+    color: rgb(246, 245, 248);
+    padding: 0px 0;
+    text-align: center;
+}
+
+header h1 {
+    display: inline-block;
+    margin: 0;
+}
+
+.hospital-logo {
+    height: 100px; 
+    vertical-align: middle; 
+    margin-left: 0px; 
+}
+
+nav {
+    background: #05191f;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: rgb(252, 251, 251);
+    padding: 15px 20px;
+    text-decoration: 0;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background: #575757;
+}
+
+main {
+    text-align: center;
+    padding: 0px 0px;
+}
+
+.hospital-image {
+    max-width: 100%; 
+    height: auto; 
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
