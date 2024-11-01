@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking</title>
+    <link rel="stylesheet" href="bookAppointment.css">
+</head>
+<body>
+    <div class="header">
+        <img src="logo.jpeg" alt="Hospital Logo" class="logo"> 
+        <h1>CITY CARE HOSPITAL</h1>
+    </div>
+    <div class="container">
+        <form id="patient-form" class="form-section">
+            <h2> Fill Patient Details</h2>
+            <div class="form-row">
+                <input type="text" class="form-input" placeholder="First Name" required>
+                <input type="text" class="form-input" placeholder="Last Name" required>
+            </div>
+            <div class="form-row">
+                <input type="date" class="form-input" required>
+                <select class="form-input" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <input type="tel" class="form-input" placeholder="Contact Number" required>
+                <input type="text" class="form-input" placeholder="Address" required>
+            </div>
+            <div class="form-row">
+                <input type="email" class="form-input" placeholder="Email" required>
+            </div>
+            <button type="button" onclick="nextToDoctorInfo()">Next</button>
+        </form>
+
+        <form id="doctor-form" class="form-section" style="display: none;">
+            <h2>Fill Doctor's Details</h2>
+            <div class="form-row">
+                <input type="text" class="form-input" placeholder="Doctor's First Name" required>
+                <input type="text" class="form-input" placeholder="Doctor's Last Name" required>
+            </div>
+            <div class="form-row">
+                <input type="text" class="form-input" placeholder="Doctor's ID" required>
+            </div>
+            <button type="button" onclick="nextToAppointmentInfo()">Next</button>
+        </form>
+
+        <form id="appointment-form" class="form-section" style="display: none;">
+            <h2> Fill Appointment Details</Details></h2>
+            <div class="form-row">
+                <input type="date" required>
+                <input type="time" required>
+            </div>
+            <div class="button-row">
+                <button type="button" onclick="prevToDoctorInfo()">Previous</button>
+                <button type="button" onclick="confirmAppointment()">Book Confirm Appointment</button>
+            </div>
+        </form>
+
+        <div id="booking-slip" class="booking-slip" style="display: none;">
+            <h2>Appointment Booking Slip</h2>
+            <p id="slip-details"></p>
+        </div>
+    </div>
+
+    <script src="bookAppointment.js"></script>
+</body>
+</html>
+
