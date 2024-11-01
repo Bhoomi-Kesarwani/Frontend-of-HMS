@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Billing </title>
+    <link rel="stylesheet" href="billing.css">
+</head>
+<body>
+    <div class="overlay">
+        
+        <h1 class="hospital-name">CITY CARE HOSPITAL</h1>
+
+       
+        <div class="billing-container">
+            <h2>BILLING</h2>
+            
+           
+            <div class="lookup">
+                <label for="patient-id">Patient ID:</label>
+                <input type="text" id="patient-id" placeholder="Enter Patient ID">
+                <label for="appointment-id">Appointment ID:</label>
+                <input type="text" id="appointment-id" placeholder="Enter Appointment ID">
+                <button onclick="fetchDetails()">Fetch Details</button>
+            </div>
+            
+            <!-- Billing Form -->
+            <div class="billing-form">
+                <h3>Billing Details</h3>
+                <label for="consultation-fee">Consultation Fee:</label>
+                <input type="number" id="consultation-fee" value="500" oninput="calculateTotal()">
+                
+                <label for="service-charge">Service Charge:</label>
+                <input type="number" id="service-charge" value="0" oninput="calculateTotal()">
+                
+                <!-- Prescribed Medications Cost Section -->
+                <div class="medication-section">
+                    <h4>Prescribed Medications Cost</h4>
+                    <div id="medications-list">
+                        <div class="medication-item">
+                            <input type="text" placeholder="Medication Name" class="medication-name">
+                            <input type="number" placeholder="Cost" class="medication-cost" oninput="calculateTotal()">
+                        </div>
+                    </div>
+                    <button onclick="addMedication()">Add Medication</button>
+                </div>
+                
+                <!-- Other Services Used Section -->
+                <div class="other-services-section">
+                    <h4>Other Services Used</h4>
+                    <input type="text" placeholder="Service Name" id="other-service-name">
+                    <input type="number" placeholder="Service Cost" id="other-service-cost" oninput="calculateTotal()">
+                </div>
+                
+                <label for="tax">Tax (%):</label>
+                <input type="number" id="tax" value="5" oninput="calculateTotal()">
+                
+                <div class="total">
+                    <label>Total Amount:</label>
+                    <span id="total-amount">0</span>
+                </div>
+                
+                <button onclick="generateInvoice()">Generate Slip</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Billing Slip Section -->
+    <div id="billing-slip-container" style="display: none;">
+        <div id="billing-slip">
+            <h3>Billing Slip</h3>
+            <p><strong>Appointment ID:</strong> <span id="slip-appointment-id"></span></p>
+            <p><strong>Patient ID:</strong> <span id="slip-patient-id"></span></p>
+            <p><strong>Consultation Fee:</strong> ₹<span id="slip-consultation-fee"></span></p>
+            <p><strong>Service Charge:</strong> ₹<span id="slip-service-charge"></span></p>
+            <p><strong>Tax:</strong> ₹<span id="slip-tax"></span></p>
+            <p><strong>Total Amount:</strong> ₹<span id="slip-total-amount"></span></p>
+            <h4>Medications</h4>
+            <ul id="slip-medications-list"></ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 City Hospital. All rights reserved.</p>
+    </footer>
+
+    <script src="billing.js"></script>
+</body>
+</html>
+
