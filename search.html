@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Search Doctor</title>
+    <link rel="stylesheet" href="search.css">
+</head>
+<body>
+
+    <header>
+        <img src="logo.jpeg" alt="Hospital Logo"> 
+        <h1>CITY CARE HOSPITAL</h1>
+    </header>
+
+    <!-- Search Container -->
+    <div class="search-container">
+        <h2>FIND DOCTOR</h2>
+
+        <!-- Doctor's Category Dropdown -->
+        
+        <select id="doctorCategory">
+            <option value="">Select Doctor's Category</option>
+            <option value="cardiologist">Physician</option>
+            <option value="neurologist">Specialist</option>
+            <option value="orthopedic">Surgeon</option>
+            
+        </select>
+
+
+        <select id="doctorCategory">
+            <option value="">Select Doctor's Sub-Category</option>
+            <option value="cardiologist">Cardiologist</option>
+            <option value="neurologist">Neurologist</option>
+            <option value="orthopedic">Orthopedic</option>
+            
+        </select>
+
+        <!-- Doctor's Timing Input -->
+        <input type="text" id="doctorTiming" placeholder="Enter Timing (e.g., 10:00 AM)">
+
+        <!-- Search Button -->
+        <button id="searchButton" onclick="searchDoctors()">Search</button>
+
+        <!-- Search Result Display -->
+        <div class="result" id="searchResult"></div>
+    </div>
+
+    <script src="search.js"></script>
+</body>
+</html>
+
