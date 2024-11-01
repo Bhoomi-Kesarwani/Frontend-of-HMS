@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background styling */
+body {
+    background-image: url('hospital2.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(9, 2, 37, 0.9);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    color: #031b25;
+}
+
+/* Search container styling */
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background: rgba(87, 85, 85, 0.9);
+    padding: 50px 10px;
+    border-radius: 10px;
+    max-width: 500px;
+    max-height: 400px;
+    margin: 50px auto 0;
+}
+
+.search-container select,
+.search-container input[type="text"],
+.search-container button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+/* Additional Button Styling */
+#searchButton {
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+
+#searchButton:hover {
+    background-color: #45a049; 
+}
+
+
+#searchButton:active {
+    background-color: #cc1b14; 
+}
+
+.result {
+    margin-top: 20px;
+    color: #333;
+    font-size: 1.2em;
+    text-align: center;
+}
